@@ -1,0 +1,166 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+
+\date{}
+\renewcommand{\headeright}{SC42095 Digital Control}
+\renewcommand{\undertitle}{SC42095 Digital Control}
+\renewcommand{\shorttitle}{Assignment Report}
+
+% Useful packages ===================================
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}         % Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{natbib}
+\usepackage{doi}
+
+\usepackage{dsfont}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[caption=false,font=footnotesize]{subfig}
+%==================================================================
+
+\title{Assignment Report (Assignment XX-26)}
+
+\author{%
+Alice Author (1234567) \quad
+Bob Writer (7654321)
+}
+
+%======================================================
+
+\begin{document}
+\maketitle
+
+{\color{red}Note: The texts in RED are explanatory notes. Remove them/comment them out before submitting your report.}\\
+{\color{red}Note: Provide the correct assignment number in the title (e.g., 01-26) along with your names and student numbers under authors.}\\
+{\color{red}Note: Do not change the format of this template (e.g., font size, line spacing, etc.).}\\
+{\color{red}Note: The complete report should not be more than 30 pages.}\\
+{\color{red}Note: For every design, describe and justify the iterations and decisions that led to your final design (see Item (a) in Section 1 of the assignment).}\\
+{\color{red}Note: Scale all plots so that both the transient and steady-state responses can be clearly evaluated.}\\
+
+\section*{Plant}
+
+{\color{red}Note: Describe the plant and provide its transfer function and parameter values.}
+
+%======================================================
+% Discrete-time control
+%======================================================
+
+\section{State-space model and plant discretization}
+
+\subsection{Continuous-time state-space model}
+
+{\color{red}Note: Provide your answer to Question 1: the continuous-time state-space description ($A$, $B$, $C$, $D$).}
+
+\subsection{Discretization}
+
+{\color{red}Note: Provide your answer to Question 1: the discrete-time description ($\Phi$, $\Gamma$, $C$, $D$), and motivate your choice of discretization method and sampling time $h$.}
+
+%======================================================
+% Pole-placement design
+%======================================================
+
+\section{DT pole-placement design for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 2. Show the different sets of pole locations you tried, the set-point step responses of your servo (tracking) scheme, and justify the poles of your final design.}
+
+\section{DT pole-placement design with input limitation}
+
+\subsection{Control signal calculation}
+
+{\color{red}Note: Provide your answer to Question 3a.}
+
+\subsection{DT pole-placement redesign for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 3b.}
+
+\section{DT pole-placement design with input delay}
+
+\subsection{Modeling and incorporating input delay}
+
+{\color{red}Note: Provide your answer to Question 4a.}
+
+\subsection{DT pole-placement redesign for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 4b.}
+
+%======================================================
+% Observer design
+%======================================================
+
+\section{DT observer design and output-feedback control}
+
+\subsection{Observer design and set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 5a. State where the observer poles are placed and why, compare the responses with and without the observer (using nonzero initial conditions), and show that the estimation error converges to zero.}
+
+\subsection{Integral action and disturbance rejection}
+
+{\color{red}Note: Provide your answer to Question 5b. Give the revised set of poles for the augmented system and evaluate the disturbance response of your observer-based design with integral action.}
+
+%======================================================
+% LQ design
+%======================================================
+
+\section{DT LQ design for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 6. Show the weighting matrices you tried, their influence on the step response (servo scheme), and your conclusions.}
+
+\section{DT LQ design with input limitation}
+
+\subsection{Control signal calculation}
+
+{\color{red}Note: Provide your answer to Question 7a.}
+
+\subsection{DT LQ redesign for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 7b.}
+
+\section{DT LQ design with input delay}
+
+\subsection{Modeling and incorporating input delay}
+
+{\color{red}Note: Provide your answer to Question 8a.}
+
+\subsection{DT LQ redesign for set-point tracking}
+
+{\color{red}Note: Provide your answer to Question 8b.}
+
+%======================================================
+
+\section{Steady-state error}
+
+\subsection{Pole-placement design}
+
+{\color{red}Note: Provide your answer to Question 9 for the pole-placement design: the method used to eliminate the steady-state error, with a reference step response and a step input disturbance. If already addressed earlier (e.g., in Question 5b), briefly refer to that section.}
+
+\subsection{LQ design}
+
+{\color{red}Note: Provide your answer to Question 9 for the LQ design: the method used to eliminate the steady-state error, with a reference step response and a step input disturbance.}
+
+%======================================================
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+%======================================================
+
+% \appendix
+
+% \section{Additional material}\label{sec:additional}
+
+\end{document}
